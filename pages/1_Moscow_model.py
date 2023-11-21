@@ -9,7 +9,7 @@ from backend.preprocessing import *
 encoder = load(open('backend/moscow_models/encoder_cb.pkl', 'rb'))
 
 model = xgb.Booster()
-model.load_model("backend/moscow_models/modelxg.pkl")git pull origin master
+model.load_model("backend/moscow_models/modelxg.pkl")
 
 station_computer = StationComputer('stations/moscow_stations.csv')
 address_translator = AddressTranslator(['ул.', 'пер.', 'просп.', 'поселение', 'жк', 'проезд', 'ш.', 'наб.',
